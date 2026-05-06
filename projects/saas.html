@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>FlowApp SaaS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',system-ui,sans-serif;background:#fafafa;color:#0a0a0a;overflow-x:hidden}
+  .hero{min-height:100vh;padding:30px 24px 60px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;background:radial-gradient(ellipse at top,#dbeafe 0%,#fafafa 50%)}
+  .nav{position:absolute;top:24px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+  .brand{font-weight:800;font-size:18px;display:flex;align-items:center;gap:8px}
+  .brand-dot{width:24px;height:24px;background:linear-gradient(135deg,#3b82f6,#06b6d4);border-radius:6px}
+  .nav-cta{padding:8px 16px;background:#0a0a0a;color:#fff;border-radius:6px;text-decoration:none;font-weight:600}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:#fff;border:1px solid #e5e5e5;border-radius:99px;font-size:12px;font-weight:500;margin-bottom:24px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .badge::before{content:"";width:6px;height:6px;background:#22c55e;border-radius:99px;animation:pulse 2s infinite}
+  @keyframes pulse{50%{opacity:.4}}
+  h1{font-size:56px;font-weight:800;line-height:1;margin-bottom:18px;letter-spacing:-2.5px;max-width:700px;background:linear-gradient(180deg,#0a0a0a 0%,#525252 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-size:18px;color:#525252;margin-bottom:32px;line-height:1.5;max-width:520px}
+  .ctas{display:flex;gap:10px;margin-bottom:48px;flex-wrap:wrap;justify-content:center}
+  .btn-primary{padding:14px 24px;background:#0a0a0a;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;font-size:14px}
+  .btn-secondary{padding:14px 24px;background:#fff;color:#0a0a0a;text-decoration:none;border-radius:8px;font-weight:600;font-size:14px;border:1px solid #e5e5e5}
+  .logos{display:flex;gap:30px;align-items:center;opacity:.5;font-size:11px;color:#737373;margin-bottom:30px;flex-wrap:wrap;justify-content:center;letter-spacing:1px}
+  .logos span{font-weight:700}
+  .mockup{width:100%;max-width:760px;background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:14px;box-shadow:0 30px 80px rgba(0,0,0,.1)}
+  .mockup-bar{display:flex;gap:5px;margin-bottom:10px}
+  .mockup-bar span{width:9px;height:9px;border-radius:99px;background:#e5e5e5}
+  .mockup-content{height:140px;background:linear-gradient(135deg,#dbeafe,#cffafe);border-radius:6px;display:grid;grid-template-columns:1fr 2fr;gap:8px;padding:8px}
+  .mockup-content div{background:#fff;border-radius:4px;opacity:.6}
+</style>
+</head>
+<body>
+<section class="hero">
+  <nav class="nav">
+    <div class="brand"><div class="brand-dot"></div>FlowApp</div>
+    <a href="#" class="nav-cta">Começar grátis</a>
+  </nav>
+  <div class="badge">Novo · Integração com IA disponível</div>
+  <h1>Gerencie sua equipe sem complicação.</h1>
+  <p class="sub">A plataforma completa de produtividade que substitui 5 ferramentas que sua equipe usa hoje.</p>
+  <div class="ctas">
+    <a href="#" class="btn-primary">Teste grátis por 14 dias →</a>
+    <a href="#" class="btn-secondary">Ver demonstração</a>
+  </div>
+  <div class="logos">
+    <span>EMPRESA A</span>
+    <span>BRAND·B</span>
+    <span>COMPANY</span>
+    <span>STARTUP·X</span>
+    <span>CORP++</span>
+  </div>
+  <div class="mockup">
+    <div class="mockup-bar"><span></span><span></span><span></span></div>
+    <div class="mockup-content"><div></div><div></div></div>
+  </div>
+</section>
+</body>
+</html>

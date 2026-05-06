@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Casa dos Sonhos</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Helvetica Neue',Arial,sans-serif;background:#faf8f5;color:#1c1917}
+  .hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 1fr;gap:0}
+  @media(max-width:900px){.hero{grid-template-columns:1fr}}
+  .img{background:linear-gradient(135deg,#78716c 0%,#44403c 100%);position:relative;overflow:hidden;min-height:300px}
+  .img::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.2),rgba(0,0,0,.5));z-index:1}
+  .img-stripes{position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0,transparent 20px,rgba(255,255,255,.03) 20px,rgba(255,255,255,.03) 40px)}
+  .price-tag{position:absolute;bottom:30px;left:30px;background:#fff;padding:14px 20px;border-radius:4px;z-index:2}
+  .price-tag small{display:block;font-size:10px;color:#78716c;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px}
+  .price-tag strong{font-size:24px;color:#1c1917;font-weight:300;letter-spacing:-.5px}
+  .content{padding:60px 50px;display:flex;flex-direction:column;justify-content:center}
+  .label{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:#a16207;margin-bottom:20px;font-weight:600}
+  h1{font-size:44px;font-weight:300;line-height:1.1;margin-bottom:14px;letter-spacing:-1.5px}
+  .loc{font-size:14px;color:#78716c;margin-bottom:30px;display:flex;align-items:center;gap:6px}
+  .specs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:36px;padding:20px 0;border-top:1px solid #e7e5e4;border-bottom:1px solid #e7e5e4}
+  .spec strong{display:block;font-size:18px;font-weight:300;color:#1c1917}
+  .spec span{font-size:10px;color:#78716c;text-transform:uppercase;letter-spacing:1px}
+  .form{display:flex;gap:8px;flex-wrap:wrap}
+  .form input{flex:1;min-width:160px;padding:14px 16px;border:1px solid #e7e5e4;background:#fff;font-size:13px;border-radius:2px}
+  .btn{padding:14px 24px;background:#1c1917;color:#fff;border:0;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px}
+  .btn:hover{background:#a16207}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="img">
+    <div class="img-stripes"></div>
+    <div class="price-tag"><small>A partir de</small><strong>R$ 890.000</strong></div>
+  </div>
+  <div class="content">
+    <div class="label">Lançamento exclusivo</div>
+    <h1>Residencial Vista Mar</h1>
+    <div class="loc">📍 Beira-mar, Florianópolis · SC</div>
+    <div class="specs">
+      <div class="spec"><strong>3</strong><span>Dorms</span></div>
+      <div class="spec"><strong>2</strong><span>Suítes</span></div>
+      <div class="spec"><strong>120m²</strong><span>Área</span></div>
+      <div class="spec"><strong>2</strong><span>Vagas</span></div>
+    </div>
+    <form class="form" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='✓ Enviado'">
+      <input type="text" placeholder="Nome completo" required>
+      <input type="tel" placeholder="WhatsApp" required>
+      <button class="btn">Quero visitar</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>

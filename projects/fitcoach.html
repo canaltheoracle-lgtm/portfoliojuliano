@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>FitCoach Pro</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:#0f172a;color:#fff;overflow-x:hidden}
+  .hero{min-height:100vh;background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#0f172a 100%);position:relative;display:flex;align-items:center;padding:24px}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(34,197,94,.15),transparent 50%),radial-gradient(circle at 80% 80%,rgba(34,197,94,.1),transparent 50%)}
+  .container{max-width:520px;margin:0 auto;position:relative;z-index:1;text-align:center}
+  .badge{display:inline-block;padding:6px 14px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);border-radius:99px;font-size:11px;color:#22c55e;font-weight:600;margin-bottom:20px;letter-spacing:.5px}
+  h1{font-size:42px;font-weight:900;line-height:1.05;margin-bottom:16px;letter-spacing:-1px}
+  h1 span{color:#22c55e}
+  .sub{font-size:15px;color:#94a3b8;margin-bottom:28px;line-height:1.5}
+  .form{background:#1e293b;padding:20px;border-radius:14px;border:1px solid #334155;margin-bottom:20px}
+  .form input{width:100%;padding:12px 14px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#fff;font-size:14px;margin-bottom:10px}
+  .form input::placeholder{color:#64748b}
+  .btn{width:100%;padding:14px;background:#22c55e;color:#0f172a;border:0;border-radius:8px;font-weight:800;font-size:14px;cursor:pointer;text-transform:uppercase;letter-spacing:.5px}
+  .stats{display:flex;justify-content:space-around;padding-top:18px;border-top:1px solid #334155;margin-top:18px}
+  .stat strong{display:block;font-size:22px;color:#22c55e;font-weight:900}
+  .stat span{font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="container">
+    <div class="badge">⚡ TREINO PERSONALIZADO</div>
+    <h1>Transforme seu corpo em <span>90 dias</span></h1>
+    <p class="sub">Plano de treino e dieta sob medida com acompanhamento diário do seu personal.</p>
+    <form class="form" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='✓ ENVIADO!'">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="tel" placeholder="WhatsApp" required>
+      <button class="btn">QUERO MEU PLANO GRÁTIS</button>
+      <div class="stats">
+        <div class="stat"><strong>2.4k</strong><span>Alunos</span></div>
+        <div class="stat"><strong>4.9★</strong><span>Avaliação</span></div>
+        <div class="stat"><strong>90d</strong><span>Resultado</span></div>
+      </div>
+    </form>
+  </div>
+</section>
+</body>
+</html>

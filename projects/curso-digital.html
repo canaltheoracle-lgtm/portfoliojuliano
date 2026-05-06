@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Domine Tráfego Pago — Curso Completo</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0612; color: #fff; }
+  .hero { min-height: 100vh; padding: 60px 6vw; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: radial-gradient(ellipse at center top, #2d1b4e 0%, #0a0612 60%); position: relative; }
+  .hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+  .badge { padding: 8px 18px; background: linear-gradient(90deg, #f59e0b, #ef4444); border-radius: 100px; font-size: 12px; font-weight: 700; margin-bottom: 28px; letter-spacing: 1px; text-transform: uppercase; position: relative; }
+  h1 { font-size: clamp(40px, 6vw, 76px); line-height: 1; font-weight: 900; margin-bottom: 24px; letter-spacing: -0.03em; max-width: 1000px; position: relative; }
+  h1 em { font-style: normal; background: linear-gradient(90deg, #f59e0b, #ef4444); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { font-size: 20px; color: #b8b5c8; max-width: 640px; line-height: 1.5; margin-bottom: 40px; position: relative; }
+  .price-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 24px; padding: 32px 48px; margin-bottom: 32px; position: relative; }
+  .price-box .old { text-decoration: line-through; color: #6b7280; font-size: 18px; }
+  .price-box .new { font-size: 56px; font-weight: 900; background: linear-gradient(90deg, #f59e0b, #ef4444); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; }
+  .price-box .terms { color: #b8b5c8; font-size: 14px; margin-top: 8px; }
+  .cta { padding: 20px 48px; background: linear-gradient(90deg, #f59e0b, #ef4444); color: #fff; border: none; border-radius: 100px; font-size: 18px; font-weight: 800; cursor: pointer; box-shadow: 0 20px 40px rgba(245, 158, 11, 0.4); animation: pulse 2s infinite; text-decoration: none; }
+  @keyframes pulse { 50% { transform: scale(1.03); } }
+  .features { display: flex; gap: 32px; margin-top: 48px; flex-wrap: wrap; justify-content: center; position: relative; }
+  .f { display: flex; align-items: center; gap: 8px; color: #b8b5c8; font-size: 14px; }
+  .f::before { content: '✓'; width: 24px; height: 24px; background: #4cd964; color: #0a0612; border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: 14px; }
+  .timer { display: flex; gap: 12px; margin: 24px 0; position: relative; }
+  .t-block { background: rgba(255,255,255,0.05); padding: 12px 18px; border-radius: 12px; min-width: 64px; }
+  .t-block strong { display: block; font-size: 28px; font-weight: 800; }
+  .t-block span { font-size: 11px; color: #b8b5c8; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="badge">⚡ Últimas 48 horas com desconto</div>
+  <h1>Domine <em>Tráfego Pago</em> e fature 6 dígitos por mês</h1>
+  <p class="lead">+12 horas de aulas, mentoria ao vivo e a metodologia que já gerou R$ 47 milhões em vendas para meus alunos.</p>
+  <div class="timer">
+    <div class="t-block"><strong>01</strong><span>Dias</span></div>
+    <div class="t-block"><strong>14</strong><span>Horas</span></div>
+    <div class="t-block"><strong>22</strong><span>Min</span></div>
+    <div class="t-block"><strong>09</strong><span>Seg</span></div>
+  </div>
+  <div class="price-box">
+    <div class="old">De R$ 1.997,00</div>
+    <div class="new">R$ 497</div>
+    <div class="terms">ou 12x de R$ 49,70 sem juros</div>
+  </div>
+  <a class="cta" href="#">QUERO GARANTIR MINHA VAGA →</a>
+  <div class="features">
+    <div class="f">Acesso vitalício</div>
+    <div class="f">Certificado</div>
+    <div class="f">Garantia 7 dias</div>
+    <div class="f">Suporte exclusivo</div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Sorriso Perfeito</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Georgia',serif;background:#fff;color:#0c2340}
+  .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;gap:0}
+  @media(max-width:900px){.hero{grid-template-columns:1fr}}
+  .left{padding:50px 60px;display:flex;flex-direction:column;justify-content:center;background:#f8fafc}
+  .right{background:linear-gradient(135deg,#0c2340 0%,#1e3a8a 100%);position:relative;overflow:hidden}
+  .right::before{content:"";position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(56,189,248,.3),transparent 70%);top:-100px;right:-100px}
+  .right::after{content:"";position:absolute;inset:0;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><circle cx='30' cy='30' r='1' fill='white' opacity='.2'/></svg>")}
+  .logo{font-family:Georgia,serif;font-style:italic;font-size:22px;color:#0c2340;margin-bottom:36px}
+  .logo b{color:#38bdf8}
+  h1{font-size:46px;line-height:1.1;margin-bottom:18px;font-weight:400;color:#0c2340}
+  h1 em{font-style:italic;color:#38bdf8}
+  .sub{font-size:16px;color:#475569;margin-bottom:30px;line-height:1.6;font-family:system-ui,sans-serif}
+  .features{font-family:system-ui,sans-serif;margin-bottom:30px}
+  .features li{padding:10px 0;border-bottom:1px solid #e2e8f0;color:#334155;display:flex;align-items:center;gap:12px;list-style:none;font-size:14px}
+  .features li::before{content:"✓";color:#38bdf8;font-weight:900;font-size:18px}
+  .cta{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:#0c2340;color:#fff;text-decoration:none;border-radius:4px;font-weight:600;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.5px;align-self:flex-start}
+  .cta:hover{background:#38bdf8}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="left">
+    <div class="logo">Sorriso<b>Perfeito</b> Odontologia</div>
+    <h1>Recupere a confiança do seu <em>sorriso</em>.</h1>
+    <p class="sub">Implantes, lentes de contato e ortodontia invisível com tecnologia de ponta. Primeira avaliação gratuita.</p>
+    <ul class="features">
+      <li>Avaliação 3D sem compromisso</li>
+      <li>Parcelamento em até 24x sem juros</li>
+      <li>Garantia de 5 anos em implantes</li>
+    </ul>
+    <a href="#" class="cta">AGENDAR AVALIAÇÃO GRÁTIS →</a>
+  </div>
+  <div class="right"></div>
+</section>
+</body>
+</html>
